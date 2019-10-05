@@ -1,1 +1,1 @@
-web: gunicorn Lab.wsgi
+web: gunicorn hello:app
