@@ -38,9 +38,9 @@ class NormalLoginForm extends React.Component {
 
                 :
 
-                <Form onSubmit={this.handleSubmit} className="login-form">
+                <Form onSubmit={this.handleSubmit} className="login-form" labelAlign='center'>
 
-                    <FormItem>
+                    <FormItem labelAlign='center'>
                     {getFieldDecorator('userName', {
                         rules: [{ required: true, message: 'Please input your username!' }],
                     })(
@@ -63,7 +63,7 @@ class NormalLoginForm extends React.Component {
                     Or 
                     <NavLink 
                         style={{marginRight: '10px'}} 
-                        to='/signup/'> signup
+                        to='/signup/'> Signup
                     </NavLink>
                     </FormItem>
                 </Form>

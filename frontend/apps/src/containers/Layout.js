@@ -9,42 +9,43 @@ const { Header, Content, Footer } = Layout;
 class CustomLayout extends React.Component {
     render() {
         return (
-            <Layout className="layout">
+            <Layout className="layout" align='center'>
                 <Header>
-                <div className="logo" />
+                <div className="logo" 
+                    />
                 <Menu
                     theme="dark"
                     mode="horizontal"
-                    defaultSelectedKeys={['2']}
-                    style={{ lineHeight: '64px' }}
+                    defaultSelectedKeys={['1']}
+                    style={{ lineHeight: '54px' }}
                 >
     
                 {
                     this.props.isAuthenticated ?
     
-                    <Menu.Item key="2" onClick={this.props.logout}>
+                    <Menu.Item key="1" onClick={this.props.logout}>
                         Logout
                     </Menu.Item>
     
                     :
     
-                    <Menu.Item key="2">
+                    <Menu.Item key="1" textAlign='center'>
                         <Link to="/login">Login</Link>
                     </Menu.Item>
                 }
     
-                    <Menu.Item key="1">
+                    <Menu.Item key="2" textAlign='center'>
                         <Link to="/labs">Labs</Link>
                     </Menu.Item>
 
-                    <Menu.Item key="3">
+                    <Menu.Item key="3" textAlign='center'>
                         <Link to="/equipment">Equipment</Link>
                     </Menu.Item>
                     
                 </Menu>
                 </Header>
-                <Content style={{ padding: '0 50px' }}>
-                    <div style={{ background: '#fff', padding: 24, minHeight: 280 }}>
+                <Content style={{ padding: '0 30px' }}>
+                    <div style={{ background: '#ffff', padding: 30, minHeight: 450 }}>
                         {this.props.children}
                     </div>
                 </Content>

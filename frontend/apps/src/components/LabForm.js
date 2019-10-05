@@ -38,7 +38,7 @@ class LabForm extends React.Component {
           <Form.Item label="Name">
             <Input name="name" placeholder="Enter the lab name" />
           </Form.Item>
-          <Form.Item label="Addministrator">
+          <Form.Item label="Administrator">
             <Input name="administrator" placeholder="Enter the Administrator" />
           </Form.Item>
           <Form.Item >
