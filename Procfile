@@ -1,1 +1,1 @@
-web: gunicorn Labsettings.wsgi
+web: gunicorn backend.wsgi
