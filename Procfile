@@ -1,1 +1,1 @@
-web: gunicorn backend:App
+web: gunicorn Loco DJANGO - Lab Management Database:App
