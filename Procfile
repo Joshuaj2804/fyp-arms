@@ -1,1 +1,1 @@
-web gunicorn Lab:fyp
+web: gunicorn frontend:apps
