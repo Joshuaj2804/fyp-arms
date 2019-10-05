@@ -1,1 +1,1 @@
-web: gunicorn Loco DJANGO - Lab Management Database.Lab
+web: gunicorn Lab.wsgi.application
