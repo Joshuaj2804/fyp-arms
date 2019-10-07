@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import EquipmentForm from '../components/EquipmentForm.js.js.js';
+import EquipmentForm from '../components/EquipmentForm';
 import { connect } from 'react-redux';
 import { Card } from 'antd';
 import Equipment from '../components/Equipment';
