@@ -6,13 +6,11 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-gunicorn = "*"
 django = "*"
-django-cors-headers = "*"
 djangorestframework = "*"
 django-rest-auth = "*"
 django-allauth = "*"
-whitenoise = "*"
+django-cors-headers = "*"
 
 [requires]
 python_version = "3.7"
