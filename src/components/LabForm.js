@@ -12,7 +12,7 @@ class LabForm extends React.Component {
 
         switch(requestType){
             case 'post':
-                return axios.post('http://127.0.0.1:8000/lab/',{
+                return axios.post('https://arms-fyp-v1.herokuapp.com/lab/',{
                     name: name,
                     administrator: administrator
                 })
@@ -20,7 +20,7 @@ class LabForm extends React.Component {
                 .catch(error=> console.error(error)); 
 
             case 'put':
-                return axios.put(`http://127.0.0.1:8000/lab/${labID}/`,{
+                return axios.put(`https://arms-fyp-v1.herokuapp.com/lab/${labID}/`,{
                     name: name,
                     administrator: administrator
                 })

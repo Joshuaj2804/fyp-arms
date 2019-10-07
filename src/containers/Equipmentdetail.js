@@ -44,7 +44,7 @@ class Equipmentdetail extends React.Component{
                     <p>Lab : {this.state.equipment.lab}</p>
                     <p>Maintenance Date : {this.state.equipment.maintenancedate}</p>
                     <p>Comments : {this.state.equipment.comment}</p>
-                    <QrCode value={`http://localhost:3000/equipment/${this.state.equipment.id}`} align= 'center'/>
+                    <QrCode value={`https://arms-fyp-v1.herokuapp.com/equipment/${this.state.equipment.id}`} align= 'center'/>
                     <br/>
                     <br/>
                     <form  onSubmit={this.handleDelete}>
