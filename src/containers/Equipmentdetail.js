@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import { Card,Button } from 'antd';
-import EquipmentForm from '../../components/EquipmentForm';
+import EquipmentForm from '../components/EquipmentForm';
 import { connect } from 'react-redux';
 var QrCode = require('qrcode.react');
 class Equipmentdetail extends React.Component{
