@@ -25,7 +25,7 @@ SECRET_KEY = 'asz9rlz3e&1w5a&_o+8p8tlm9j%%jo=nuzpoi2ol17kz^fylhs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://arms-fyp-v1.herokuapp.com/']
+ALLOWED_HOSTS = ['arms-fyp-v1.herokuapp.com/']
 
 
 # Application definition
