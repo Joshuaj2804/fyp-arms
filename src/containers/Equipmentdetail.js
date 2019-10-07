@@ -16,7 +16,7 @@ class Equipmentdetail extends React.Component{
 
     componentDidMount() {
         const equipmentID = this.props.match.params.equipmentID;
-        axios.get(`http://127.0.0.1:8000/equipment/${equipmentID}/`)
+        axios.get(`https://arms-fyp-v1.herokuapp.com/equipment/${equipmentID}/`)
         .then (res=>{
             this.setState({
                 equipment: res.data
@@ -32,7 +32,7 @@ class Equipmentdetail extends React.Component{
             "Content-Type": "application/json",
             Authorization: `Token ${this.state.user.token}`
           };
-        axios.delete(`http://127.0.0.1:8000/equipment/${equipmentID}/`);
+        axios.delete(`https://arms-fyp-v1.herokuapp.com/equipment/${equipmentID}/`);
         this.props.history.push('/');
         this.forceUpdate();
     }

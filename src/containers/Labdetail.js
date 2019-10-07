@@ -13,7 +13,7 @@ class Labdetail extends React.Component{
 
     componentDidMount() {
         const labID = this.props.match.params.labID;
-        axios.get(`http://127.0.0.1:8000/lab/${labID}/`)
+        axios.get(`https://arms-fyp-v1.herokuapp.com/lab/${labID}/`)
         .then (res=>{
             this.setState({
                 lab: res.data
@@ -29,7 +29,7 @@ class Labdetail extends React.Component{
             "Content-Type": "application/json",
             Authorization: `Token ${this.props.token}`
           };
-        axios.delete(`http://127.0.0.1:8000/lab/${labID}/`);
+        axios.delete(`https://arms-fyp-v1.herokuapp.com/lab/${labID}/`);
         this.props.history.push('/');
         this.forceUpdate();
     }

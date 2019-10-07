@@ -14,7 +14,7 @@ class Lablist extends React.Component{
 
     componentDidMount(){
 
-        axios.get('http://127.0.0.1:8000/lab/')
+        axios.get('https://arms-fyp-v1.herokuapp.com/lab/')
         .then (res=>{
             this.setState({
                 labs: res.data

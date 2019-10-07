@@ -14,7 +14,7 @@ class Equipmentlist extends React.Component{
 
     componentDidMount(){
 
-        axios.get('http://127.0.0.1:8000/equipment/')
+        axios.get('https://arms-fyp-v1.herokuapp.com/equipment/')
         .then (res=>{
             this.setState({
                 equipment: res.data
