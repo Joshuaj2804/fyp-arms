@@ -1,6 +1,6 @@
 A project made by me and my mate Imran (Loco) for our final year project
 
-WHAT DOEs IT DO?
+WHAT DOES IT DO?
 - It's a system to manage and view inventory and maintenance records. It uses a QR code system that handles the QR codes for each new equipment in each lab and generates one for each. These QR Codes can be scanned to bring the user to the page of the equipment
 
 WHAT WORKS AND WHAT DOESN'T
