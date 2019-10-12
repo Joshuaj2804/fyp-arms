@@ -40,13 +40,13 @@ export const checkAuthTimeout = expirationTime => {
 export const authLogin = (username, password) => {
     return dispatch => {
         dispatch(authStart());
-        axios.post('http://127.0.0.1:8000/api-auth/login/', {
+        axios.post('https://arms-fyp-v1.herokuapp.com/api-auth/login/', {
             username: username,
             password: password
         })
         .then(res => {
-            const adminrole=res.data.user.groups==='http://127.0.0.1:8000/group-detail/1/'?true:false
-            const anonrole=res.data.user.groups==='http://127.0.0.1:8000/group-detail/2/'?true:false
+            const adminrole=res.data.user.groups==='https://arms-fyp-v1.herokuapp.com/user-detail/'?true:false
+            const anonrole=res.data.user.groups==='https://arms-fyp-v1.herokuapp.com/group-detail/'?true:false
             const user = {
                 username,
                 token : res.data.key,
@@ -69,7 +69,7 @@ export const authLogin = (username, password) => {
 export const authSignup = (username, email, password1, password2) => {
     return dispatch => {
         dispatch(authStart());
-        axios.post('http://127.0.0.1:8000/api-auth/register/', {
+        axios.post('https://arms-fyp-v1.herokuapp.com/api-auth/register/', {
             username: username,
             email: email,
             password1: password1,

@@ -10,7 +10,7 @@ import CustomLayout from './containers/Layout';
 class App extends Component {
 
   componentDidMount() {
-    this.props.onTryAutoSignup();
+    // this.props.onTryAutoSignup();
   }
 
   render() {

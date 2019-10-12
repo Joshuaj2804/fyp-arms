@@ -40,5 +40,7 @@
   "engines": {
     "node": "v10.15.3",
     "npm": "v6.11.3"
-  }
+  },
+  "homepage" :
+    "http://Joshuaj2804.github.io/fyp-arms"
 }
